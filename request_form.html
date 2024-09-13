@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Request Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="request_form.html">Request Form</a>
+        <a href="user_view.html">View Requests</a>
+        <a href="login.html" class="logout">Logout</a>
+    </nav>
+    <div class="form-container">
+        <h1 class="form-title">Travel Request Form</h1>
+        <form id="travelRequestForm">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+            
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+            
+            <label for="project">Project:</label>
+            <input type="text" id="project" name="project" required>
+            
+            <label for="cause">Cause for Travel:</label>
+            <input type="text" id="cause" name="cause" required>
+            
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+            
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate" name="fromDate" required>
+            
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate" name="toDate" required>
+            
+            <label for="noOfDays">Number of Days:</label>
+            <input type="text" id="noOfDays" name="noOfDays" readonly>
+            
+            <label for="modeOfTravel">Mode of Travel:</label>
+            <input type="text" id="modeOfTravel" name="modeOfTravel" required>
+            
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="Normal">Normal</option>
+                <option value="Critical">Critical</option>
+            </select>
+            
+            <button type="submit">Submit Request</button>
+        </form>
+        <p id="requestMessage"></p>
+    </div>
+    
+    <script src="../js/request.js"></script>
+</body>
+</html>

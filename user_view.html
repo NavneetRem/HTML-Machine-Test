@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User - Travel Requests</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="request_form.html">Request Form</a>
+        <a href="user_view.html">View Requests</a>
+        <a href="login.html" class="logout">Logout</a>
+    </nav>
+    <div class="view-container">
+        <h1>Your Travel Requests</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="userRequests">
+                <!-- Requests dynamically added -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="../js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - All Requests</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admin_view.html">Pending</a>
+        <a href="all_requests.html">All</a>
+        <a href="approved_requests.html">Approved</a>
+        <a href="rejected_requests.html">Rejected</a>
+        <a href="on_hold_requests.html">On Hold</a>
+        <a href="login.html" class="logout">Logout</a>
+    </nav>
+    <div class="view-container">
+        <h1>All Requests</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="allRequests">
+                <!-- Requests dynamically added -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="../js/all_requests.js"></script>
+</body>
+</html>
